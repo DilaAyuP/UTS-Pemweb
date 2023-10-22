@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulir.css">
+    <title>UTS Pemrograman Web</title>
+</head>
+<body>
+    <header class="header">
+        <img src="assets/point_project.png" alt="logo point project" width="130" height="130" class="logo"/>
+        <div class="judul">
+            <h1> Formulir Pendaftaran Point Project 1.0 </h1>
+        </div>
+    </header>
+
+    <div class="content">
+        <form action="tabel.php" method="GET">
+            <div class="kotak">
+                <div class="title">Formulir Pendaftaran</div>
+                <label for="nama"> Nama Lengkap : </label><br>
+                <input type="text"  id="nama" name="nama_pendaftar" required><br>
+                <span class="error" id="namaError"></span><br>
+    
+                <label for="nim"> NIM : </label><br>
+                <input type="text"  id="nim" name="nim_pendaftar" required><br>
+                <span class="error" id="nimError"></span><br>
+    
+                <label for="prodi"> Program Studi : </label><br>
+                <input type="text"  id="prodi" name="prodi_pendaftar"><br><br>
+    
+                <label for="email"> Email : </label><br>
+                <input type="email" id="email" name="email_pendaftar" required><br>
+                <span class="error" id="emailErrror"></span><br>
+    
+                <label for="pw"> Password : </label><br>
+                <input type="password" id="pw" name="pwd" required><br>
+                <span class="error" id="pwErrror"></span><br>
+    
+                <label> Jenis Kelamin : </label><br>
+                <input type="radio" name="gender" value="Laki-Laki"> Laki-Laki <br>
+                <input type="radio" name="gender" value="Perempuan"> Perempuan <br><br>
+    
+                <label> Tanggal Lahir : </label><br>
+                <input type="date" name="tanggal_lahir"><br><br>
+    
+                <label> Alamat : </label><br>
+                <textarea rows="4" cols="50" name="alamat_pendaftar"></textarea><br><br>
+    
+                <button type="submit">Daftar</button>
+    
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        &copy; Hak Cipta 2023 - Dila Ayu Prastita
+    </footer>
+    
+</body>
+</html>
